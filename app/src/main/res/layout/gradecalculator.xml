@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_table"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*"
+    >
+    <!-- Header -->
+    <TableRow
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:background="#116cff"
+            android:gravity="center"
+            android:padding="18dp"
+            android:text="Grade Calculator"
+            android:textColor="#ffffff"
+            android:textSize="20dp"></TextView>
+    </TableRow>
+    <TextView
+        android:padding="3dip"
+        android:gravity="center"
+        android:text="Please set empty fields to 0."
+        android:textColor="#116cff"
+        />
+
+    <TableRow
+        android:layout_width="fill_parent">
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="Assignment"
+            android:textColor="#116cff"
+            />
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="Grade"
+            android:textColor="#116cff"
+            />
+
+        <TextView
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="% of Grade"
+            android:textColor="#116cff"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent">
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="Homework 1"
+
+            />
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/grade1"
+            />
+
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/weight1"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent">
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="Homework 2"
+
+            />
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/grade2"
+            />
+
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/weight2"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent">
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="Midterm"
+
+            />
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/grade3"
+
+            />
+
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/weight3"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent">
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="Final"
+
+            />
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/grade4"
+            />
+
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/weight4"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent">
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="Presentation"
+
+            />
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="95"
+            android:text="0"
+            android:id="@+id/grade5"
+            />
+
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="20%"
+            android:text="0"
+            android:id="@+id/weight5"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent">
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="Lab"
+
+            />
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/grade6"
+            />
+
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/weight6"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent">
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="Quiz"
+
+            />
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/grade7"
+            />
+
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/weight7"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent">
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:hint="Attendance"
+
+            />
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/grade8"
+            />
+
+        <EditText
+            android:padding="3dip"
+            android:gravity="left"
+            android:text="0"
+            android:id="@+id/weight8"
+            />
+    </TableRow>
+
+    <!-- The Go Button !-->
+    <Button
+        android:id="@+id/go"
+        android:layout_width="10dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="#116cff"
+        android:gravity="center"
+        android:onClick="Method"
+        android:text="Calculate"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+    <TableRow
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:padding="3dip"
+            android:gravity="center"
+            android:text="Raw Grade"
+            android:id="@+id/aboveraw"
+            android:textColor="#116cff"
+
+            />
+        <TextView
+            android:padding="3dip"
+            android:gravity="center"
+            android:text="Grade Out of 4.0"
+            android:id="@+id/aboveconvert"
+            android:textColor="#116cff"
+
+            />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent">
+
+        <TextView
+            android:padding="2dip"
+            android:gravity="center"
+
+            android:id="@+id/raw"
+            android:textColor="#116cff"
+
+            />
+        <TextView
+            android:padding="2dip"
+            android:gravity="center"
+
+            android:id="@+id/convert"
+            android:textColor="#116cff"
+
+            />
+
+    </TableRow>
+
+
+
+
+</TableLayout>

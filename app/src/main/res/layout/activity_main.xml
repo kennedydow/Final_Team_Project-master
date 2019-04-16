@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ToDoList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:format12Hour="yyyy-MM-dd H:mm:ss EEEE"
+            android:textColor="#00FF00"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="1000dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="50dp"
+            android:hint="Enter text here..."
+            android:inputType="textPersonName"/>
+
+        <LinearLayout
+            android:id="@+id/layout01"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView android:id="@+id/text01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:text="GREAT JOB!"
+            android:gravity="center"
+            />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:headerDividersEnabled="false"
+            tools:context="com.course.example.sqlitedemopro.ToDoList"/>
+        <!--  android:background="#b6f442" -->
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
